@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
+
+/* Variables de colores */
+:root {
+    --Principal: #0fa3b1ff;
+    --Secundario: #145c9eff;
+    --Secundario-2: rgb(12, 52, 90);
+    --Contenedores: rgb(170, 232, 243);
+}
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* body {
+    background-image: url(/Images/Img/Fondo.jpg);
+} */
+
+/* Nav */
+nav {
+    background-color: var(--Contenedores);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: 8px solid var(--Principal);
+    margin-bottom: 1%;
+}
+
+nav .Logo {
+    display: flex;
+    align-items: center;
+    font-size: 20pt;
+    margin-right: 5%;
+    color: var(--Secundario);
+    
+}
+
+nav .Logo a img {
+    width: 50px;
+    padding: 5px;
+}
+
+nav .Botones a input {
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 15vh;
+    border-style: none;
+    font-size: 14pt;
+    background-color: var(--Contenedores);
+    
+}
+
+nav .Botones a input:hover {
+    background-color: var(--Secundario);
+    color: white;
+    transition: 0.8s;
+}
+
+/* Contenedor 1 */
+.Contenedor-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+.Contenedor-1 .Imagen {
+    display: flex;
+    background-color: var(--Principal);
+    border-radius: 100%;
+    padding: 5vh;
+    margin-right: 5vh;
+    border: 10px solid var(--Contenedores);
+}
+
+.Contenedor-1 .Imagen img {
+    width: 25vh;
+}
+
+.Contenedor-1 .SubContenedor-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SubContenedor-1 .Botones a input {
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 30vh;
+    border-style: none;
+    font-size: 14pt;
+    background-color: var(--Principal);
+    margin: 1vh 2vh;
+    border: 10px solid var(--Contenedores);
+}
+
+.SubContenedor-1 .Botones a input:hover {
+    background-color: var(--Secundario);
+    color: white;
+    transition: 0.8s;
+}
+
+/* Contenedor 2 */
+
+
+/* Footer */
+footer {
+    background-color: var(--Contenedores);
+    text-align: center;
+    padding: 25px;
+    border-top: 8px solid var(--Principal);
+    margin-top: 1%;
+    font-size: 14pt;
+}
