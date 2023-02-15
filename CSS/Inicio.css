@@ -1,119 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap');
-
-/* Variables de colores */
-:root {
-    --Principal: #0fa3b1ff;
-    --Secundario: #145c9eff;
-    --Secundario-2: rgb(12, 52, 90);
-    --Contenedores: rgb(170, 232, 243);
-}
-
-/* Estilos generales */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
-    font-family: 'Roboto Slab', serif;
-}
-
-/* body {
-    background-image: url(/Images/Img/Fondo.jpg);
-} */
-
-/* Nav */
-nav {
-    background-color: var(--Contenedores);
+/* Header */
+header {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    border-bottom: 8px solid var(--Principal);
-    margin-bottom: 1%;
-}
-
-nav .Logo {
-    display: flex;
-    align-items: center;
-    font-size: 20pt;
-    margin-right: 5%;
-    color: var(--Secundario);
-    
-}
-
-nav .Logo a img {
-    width: 50px;
-    padding: 5px;
-}
-
-nav .Botones a input {
-    border-radius: 10px;
-    padding: 10px 0;
-    width: 15vh;
-    border-style: none;
-    font-size: 14pt;
-    background-color: var(--Contenedores);
-    
-}
-
-nav .Botones a input:hover {
-    background-color: var(--Secundario);
-    color: white;
-    transition: 0.8s;
-}
-
-/* Contenedor 1 */
-.Contenedor-1 {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 25px;
-}
-
-.Contenedor-1 .Imagen {
-    display: flex;
-    background-color: var(--Principal);
-    border-radius: 100%;
-    padding: 5vh;
-    margin-right: 5vh;
-    border: 10px solid var(--Contenedores);
-}
-
-.Contenedor-1 .Imagen img {
-    width: 25vh;
-}
-
-.Contenedor-1 .SubContenedor-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.SubContenedor-1 .Botones a input {
-    border-radius: 10px;
-    padding: 15px 0;
-    width: 30vh;
-    border-style: none;
-    font-size: 14pt;
-    background-color: var(--Principal);
-    margin: 1vh 2vh;
-    border: 10px solid var(--Contenedores);
-}
-
-.SubContenedor-1 .Botones a input:hover {
-    background-color: var(--Secundario);
-    color: white;
-    transition: 0.8s;
-}
-
-/* Contenedor 2 */
-
-
-/* Footer */
-footer {
-    background-color: var(--Contenedores);
     text-align: center;
-    padding: 25px;
-    border-top: 8px solid var(--Principal);
-    margin-top: 1%;
+    align-items: center;
+    height: 55vh;
+    background-image: url("../Resources/Images/Ladrillos-Fondo.jpg");
+}
+
+header .Contenido {
+    width: 100vh;
+}
+
+header .Contenido h1 {
+    font-size: 7vh;
+}
+
+header .Contenido a input{
+    text-transform: uppercase;
+    padding: 1% 8%;
+    border-radius: 25px;
     font-size: 14pt;
+    background-color: var(--Botones);
+    border: 3px solid var(--Botones-Hover);
+    color: white;
+    font-weight: 600;
+}
+
+header .Contenido a input:hover {
+    background-color: var(--Botones-Hover);
+    transition: 0.6s;
+}
+
+/* Article*/
+article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 43vh;
+}
+
+article .Contenido{
+    width: 150vh;
+}
+
+article .Contenido h1 {
+    font-size: 6vh;
+    color: var(--Logo-Naranja);
+}
+
+article .Contenido p {
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+/* Section */
+section {
+    display: flex;
+    align-items: center;
+    background-color: var(--Fondo-2);
+}
+
+section .Container-Items {
+    margin: 5vh;
+    width: 90%;
+}
+
+section .Container-Center {
+    margin: 5vh;
+}
+
+section .Container-Center .Imagen img {
+    width: 50vh;
+    border-radius: 25%;
+}
+
+section .Item {
+    margin: 8vh 0;
+    text-align: justify;
+}
+
+section .Item img {
+    width: 25px;
+    margin-right: 2vh;
+}
+
+section .Item h1 {
+    font-size: 3.5vh;
+    color: var(--Botones-Hover);
+}
+
+section .Item p {
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    
+    /* Section */
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section .Container-Items {
+        margin: 0;
+    }
+
+    section .Container-Center {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+        /* Header */
+        header .Contenido h1{
+            font-size: 5vh;
+        }
+    
+        /* Article */
+        article .Contenido h1 {
+            font-size: 3vh;
+        }
+    
+        article .Contenido p {
+            font-size: 2.5vh;
+        }
+    
+}
+
+@media (max-width: 310px) {
+
+    * {
+        display: none;
+    }
+    
 }

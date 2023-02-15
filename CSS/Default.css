@@ -1,0 +1,91 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Variables */
+:root {
+    --Fondo-1: #ffffff; /* Blanco */
+    --Fondo-2: #e4eff7; /* Azul Blanquisco */
+    --Logo-Azul:  #247ca4; /* Azul Triolingo */
+    --Logo-Naranja: #f39404; /* Naranja Triolingo*/
+    --Botones:  #2cabe3; /* Azul Claro */
+    --Botones-Hover:  #1d678a; /* Azul Oscuro */
+    --Footer: #2cabe3; /* Azul Claro */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px; 
+}
+
+nav .Logo {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--Logo-Azul);
+    font-weight: bold;
+}
+
+nav .Movil input{
+    display: none;
+}
+
+nav .Menu ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .Menu li a {
+    text-decoration: none;
+    font-size: 14pt;
+    color: var(--Logo-Azul);
+    padding: 2vh;
+    font-weight: 700;
+}
+
+nav .Menu li a:hover {
+    color: var(--Logo-Naranja);
+    transition: 0.6s;
+}
+
+/* Footer */
+footer {
+    background-color: var(--Footer);
+    height: 6vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover{
+    color: black;
+}
+
+@media (max-width: 600px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .Movil input{
+        display: flex;
+        width: 50px;
+    }
+
+    nav .Menu {
+        display: none;
+    }
+}
