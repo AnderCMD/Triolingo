@@ -13,3 +13,4 @@ Lenguajes de Programacion:
 - HTML
 - CSS
 - JavaScript
+- MySQL
