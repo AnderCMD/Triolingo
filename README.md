@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-# Triolingo
- Proyecto de Arquitectura de Software 5 Cuatrimestre
-=======
 # Trilingo
 
 Proyecto de Arquitectura de Software - 5 Cuatrimestre
@@ -17,4 +13,3 @@ Lenguajes de Programacion:
 -HTML
 -CSS
 -JavaScript
->>>>>>> Stashed changes
