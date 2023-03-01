@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/Default.css">
-    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="../CSS/Registrarse.css">
     <!-- Titulo & Icono -->
     <title>Triolingo - Login</title>
     <link rel="shortcut icon" href="../Resources/Icons/SVG/Triolingo.svg" type="image/x-icon">
@@ -26,27 +26,44 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="../View/index.html">Inicio</a></li>
-                <li><a href="../View/Registrarse.html">Registrarse</a></li>
+                <li><a href="../View/Login.html">Login</a></li>
             </ul>
         </div>
     </nav>
+
     <!-- Division -->
     <br>
-    <div class="login-wrapper">
-        <div class="login-container">
-            <h2>Iniciar sesión</h2>
+    <div class="register-wrapper">
+        <div class="register-container">
+            <h2>Registro</h2>
             <form>
-                <label for="email">Correo:</label>
+                <label for="first-name">Nombre:</label>
+                <input type="text" id="first-name" name="first-name">
+
+                <label for="last-name">Apellido:</label>
+                <input type="text" id="last-name" name="last-name" >
+
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email">
 
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password"><br>
+                <input type="password" id="password" name="password">
 
-                <button type="submit">Iniciar sesión</button>
+                <label for="form-inscription">Ficha de inscripción:</label>
+                <input type="file" id="form-inscription" name="form-inscription">
+
+                <button type="submit">Registrarse</button>
             </form>
         </div>
     </div>
     <br>
+
     <!-- Division -->
     <footer>
         <p>© Copyright - <a href="index.html">Triolingo</a> 2023</p>
@@ -54,7 +71,7 @@
 
     <!-- JavaScript -->
     <script src="../JavaScript/Default.js"></script>
-    <script src="../JavaScript/Login.js"></script>
+    <script src="../JavaScript/Registrarse.js"></script>
 </body>
 
 </html>
