@@ -78,11 +78,12 @@ footer p a:hover{
 @media (max-width: 600px) {
     nav {
         justify-content: space-between;
+        padding: 5px 15px;
     }
 
     nav .Movil input{
         display: flex;
-        width: 50px;
+        width: 30px;
     }
 
     nav .Menu {
