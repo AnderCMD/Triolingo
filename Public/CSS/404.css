@@ -1,0 +1,22 @@
+.Contenedor-404 {
+    height: 87.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor-404 img {
+    width: 10vh;
+    margin: 5vh 5vh;
+}
+
+.Contenedor-404 h1 {
+    margin: 0 3vh;
+}
+
+@media (max-width: 500px) {
+    .Contenedor-404 {
+        flex-direction: column;
+        text-align: center;
+    }
+}

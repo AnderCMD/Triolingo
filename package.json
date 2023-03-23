@@ -1,0 +1,29 @@
+{
+  "name": "triolingo",
+  "version": "1.0.0",
+  "description": "Proyecto de Arquitectura de Software 5to Cuatrimestre",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnderCMD/Triolingo.git"
+  },
+  "author": "AnderCMD, Eder Sosa, Emilio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnderCMD/Triolingo/issues"
+  },
+  "homepage": "https://github.com/AnderCMD/Triolingo#readme",
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^2.0.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.21"
+  }
+}
