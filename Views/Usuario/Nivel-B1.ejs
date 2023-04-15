@@ -1,0 +1,30 @@
+<!-- Header -->
+<%- include("../Includes/Header.ejs") %>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/CSS/Style.css">
+
+	<!-- Nav Usuario -->
+	<%- include("../Includes/Nav-Usuario.ejs") %>
+
+		<!-- Division -->
+		<header>
+			<h1>Ejercicios de inglés - Nivel B1</h1>
+		</header>
+		<main>
+			<div id="question-container">
+				<h2 id="question"></h2>
+				<input type="text" id="answer">
+				<button id="check">Comprobar</button>
+				<p id="result"></p>
+			</div>
+			<div id="progress-container">
+				<div id="progress-bar"></div>
+			</div>
+		</main>
+
+		<!-- Scripts -->
+		<script src="/JavaScript/Scripts.js"></script>
+
+		<!-- Footer -->
+		<%- include("../Includes/Footer.ejs") %>

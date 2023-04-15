@@ -2,14 +2,18 @@
 <%- include('../Views/Includes/Header.ejs') %>
     <link rel="stylesheet" href="/CSS/404.css">
 
-    <!-- Nav -->
     <%- include('../Views/Includes/Nav.ejs') %>
 
         <!-- Division -->
         <div class="Contenedor-404">
-            <img src="/Resources/Icons/SVG/informacion.svg" alt="Error 404 ">
-            <h1>Error (404) <br> No se encontro la pagina solicitada</h1>
+            <i class="fa-solid fa-circle-exclamation fa-10x"></i><br>
+            <h1>Error (404) <br> No se encontro la pagina solicitada <br><span style="font-weight: 600;">En un momento sera redirigido <i class="fa-solid fa-circle-info"></i></span></h1>
         </div>
+
+        <!-- Scripts -->
+        <script>
+            setTimeout('history.back()', 5000);
+        </script>
 
         <!-- Footer -->
         <%- include('../Views/Includes/Footer.ejs') %>

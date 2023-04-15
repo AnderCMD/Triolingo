@@ -23,12 +23,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5px; 
+    padding: .25rem; 
     box-shadow: var;
+    background-color: var(--Fondo-2);
 }
 
 nav .Logo {
-    width: 50px;
+    width: 35px;
     display: flex;
     align-items: center;
     color: var(--Logo-Azul);
