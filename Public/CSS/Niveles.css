@@ -18,6 +18,7 @@
     margin: 1rem;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .Tarjeta {
@@ -29,6 +30,7 @@
     flex-direction: column; 
     justify-content:  space-between;
     width: 95%;
+    padding: 1rem;
 }
 
 .Tarjeta h1 {
@@ -59,8 +61,12 @@
     transition: 0.8s;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
     .Niveles {
         flex-direction: column;
+    }
+
+    .Tarjeta {
+        width: 97.5%;
     }
 }
