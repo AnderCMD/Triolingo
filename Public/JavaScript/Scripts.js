@@ -60,35 +60,90 @@ const botonComprobar = document.getElementById("check");
 const resultado = document.getElementById("result");
 const barraProgreso = document.getElementById("progress-bar");
 
-function iniciarEjercicio(ejercicios) {
-	if (preguntasRealizadas.length === ejercicios.length) {
-		pregunta.textContent = "¡Has respondido todas las preguntas!";
-		respuesta.style.display = "none";
-		botonComprobar.style.display = "none";
-		resultado.textContent = "Resultado final: " + contadorCorrectas + " de " + ejercicios.length;
-		return;
-	}
-	do {
-		ejercicioActual = ejercicios[Math.floor(Math.random() * ejercicios.length)];
-	} while (preguntasRealizadas.includes(ejercicioActual));
-
-	pregunta.textContent = ejercicioActual.q;
-	barWidth = 0;
-	mostrarBarraProgreso();
-
-	preguntasRealizadas.push(ejercicioActual);
-	respuesta.value = "";
-	respuesta.focus();
-}
-
 if(contenedorA1){
-	iniciarEjercicio(ejerciciosA1);
+	function iniciarEjercicio() {
+		if (preguntasRealizadas.length === ejerciciosA1.length) {
+			pregunta.textContent = "¡Has respondido todas las preguntas!";
+			respuesta.style.display = "none";
+			botonComprobar.style.display = "none";
+			resultado.textContent = "Resultado final: " + contadorCorrectas + " de " + ejerciciosa1.length;
+			return;
+		}
+		do {
+			ejercicioActual = ejerciciosA1[Math.floor(Math.random() * ejerciciosA1.length)];
+		} while (preguntasRealizadas.includes(ejercicioActual));
+	
+		pregunta.textContent = ejercicioActual.q;
+		// barWidth = 0;
+		// mostrarBarraProgreso();
+	
+		preguntasRealizadas.push(ejercicioActual);
+		respuesta.value = "";
+		respuesta.focus();
+	}
 } else if(contenedorA2){
-	iniciarEjercicio(ejerciciosA2);
+	function iniciarEjercicio() {
+		if (preguntasRealizadas.length === ejerciciosA2.length) {
+			pregunta.textContent = "¡Has respondido todas las preguntas!";
+			respuesta.style.display = "none";
+			botonComprobar.style.display = "none";
+			resultado.textContent = "Resultado final: " + contadorCorrectas + " de " + ejerciciosA2.length;
+			return;
+		}
+		do {
+			ejercicioActual = ejerciciosA2[Math.floor(Math.random() * ejerciciosA2.length)];
+		} while (preguntasRealizadas.includes(ejercicioActual));
+	
+		pregunta.textContent = ejercicioActual.q;
+		// barWidth = 0;
+		// mostrarBarraProgreso();
+	
+		preguntasRealizadas.push(ejercicioActual);
+		respuesta.value = "";
+		respuesta.focus();
+	}
 } else if(contenedorB1){
-	iniciarEjercicio(ejerciciosB1);
+	function iniciarEjercicio() {
+		if (preguntasRealizadas.length === ejerciciosB1.length) {
+			pregunta.textContent = "¡Has respondido todas las preguntas!";
+			respuesta.style.display = "none";
+			botonComprobar.style.display = "none";
+			resultado.textContent = "Resultado final: " + contadorCorrectas + " de " + ejerciciosB1.length;
+			return;
+		}
+		do {
+			ejercicioActual = ejerciciosB1[Math.floor(Math.random() * ejerciciosB1.length)];
+		} while (preguntasRealizadas.includes(ejercicioActual));
+	
+		pregunta.textContent = ejercicioActual.q;
+		// barWidth = 0;
+		// mostrarBarraProgreso();
+	
+		preguntasRealizadas.push(ejercicioActual);
+		respuesta.value = "";
+		respuesta.focus();
+	}
 } else if(contenedorB2){
-	iniciarEjercicio(ejerciciosB2);
+	function iniciarEjercicio() {
+		if (preguntasRealizadas.length === ejerciciosB2.length) {
+			pregunta.textContent = "¡Has respondido todas las preguntas!";
+			respuesta.style.display = "none";
+			botonComprobar.style.display = "none";
+			resultado.textContent = "Resultado final: " + contadorCorrectas + " de " + ejerciciosB2.length;
+			return;
+		}
+		do {
+			ejercicioActual = ejerciciosB2[Math.floor(Math.random() * ejerciciosB2.length)];
+		} while (preguntasRealizadas.includes(ejercicioActual));
+	
+		pregunta.textContent = ejercicioActual.q;
+		// barWidth = 0;
+		// mostrarBarraProgreso();
+	
+		preguntasRealizadas.push(ejercicioActual);
+		respuesta.value = "";
+		respuesta.focus();
+	}
 }
 
 function comprobarRespuesta() {
@@ -106,15 +161,15 @@ function comprobarRespuesta() {
 	setTimeout(iniciarEjercicio, 2000);
 }
 
-function mostrarBarraProgreso() {
-	if (barWidth >= 100) {
-		comprobarRespuesta();
-	} else {
-		barWidth++;
-		barraProgreso.style.width = barWidth + "%";
-		setTimeout(mostrarBarraProgreso, 100);
-	}
-}
+// function mostrarBarraProgreso() {
+// 	if (barWidth >= 300) {
+// 		comprobarRespuesta();
+// 	} else {
+// 		barWidth++;
+// 		barraProgreso.style.width = barWidth + "%";
+// 		setTimeout(mostrarBarraProgreso, 300);
+// 	}
+// }
 
 iniciarEjercicio();
 
