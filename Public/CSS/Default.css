@@ -15,6 +15,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -36,10 +37,6 @@ nav .Logo {
     font-weight: bold;
 }
 
-nav .Movil input{
-    display: none;
-}
-
 nav .Menu ul {
     display: flex;
     list-style: none;
@@ -56,6 +53,25 @@ nav .Menu li a {
 nav .Menu li a:hover {
     color: var(--Logo-Naranja);
     transition: 0.6s;
+}
+
+.Menu-Movil ul {
+    list-style: none;
+}
+
+.Menu-Movil a {
+    text-decoration: none;
+    color: var(--Botones-Hover);
+    font-size: 14pt;
+}
+
+.Movil {
+    display: flex;
+    justify-content: center;
+}
+
+.Movil details {
+    list-style: none;
 }
 
 /* Footer */
@@ -77,7 +93,37 @@ footer p a:hover{
     color: black;
 }
 
-@media (max-width: 600px) {
+details {
+    padding: 0.5em 0.5em 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 800ms ease-in-out;
+    list-style: none;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+summary:hover {
+    color: var(--Logo-Azul);
+    transition: 0.8s;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 3px solid var(--Logo-Azul);
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
     nav {
         justify-content: space-between;
         padding: 5px 15px;
@@ -92,3 +138,10 @@ footer p a:hover{
         display: none;
     }
 }
+
+@media (min-width: 769px) {
+    .Movil {
+        display: none;
+    }
+}
+

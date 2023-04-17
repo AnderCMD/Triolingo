@@ -2,19 +2,73 @@
 <%- include("../Includes/Header.ejs") %>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/Niveles.css">
 
     <!-- Nav Usuario -->
     <%- include("../Includes/Nav-Usuario.ejs") %>
 
         <!-- Division -->
-        <div class="lista">
-            <ul>
-                <li><a href="/Usuario/Nivel-A1">A1 - Principiante</a></li>
-                <li><a href="/Usuario/Nivel-A2">A2 - Elemental</a></li>
-                <li><a href="/Usuario/Nivel-B1">B1 - Intermedio bajo</a></li>
-                <li><a href="/Usuario/Nivel-B2">B2 - Intermedio alto</a></li>
-            </ul>
+        <div class="Contenedor-Niveles">
+            <h1 class="Titulo">Niveles de Aprendizaje</h1>
+            <div class="Niveles">
+                <div class="Tarjeta">
+                    <h1 class="Titulo" >Nivel - A1</h1>
+                    <h3>Los estudiantes en este nivel pueden:</h3>
+                    <ul>
+                        <li>Entender y utilizar expresiones cotidianas de uso muy frecuente, así como frases simples
+                            para
+                            satisfacer necesidades inmediatas.</li>
+                        <li>Presentarse a sí mismos y a otras personas y preguntar/responder preguntas sobre detalles
+                            personales tales como dónde viven, las cosas que tienen y las personas que conocen.</li>
+                        <li>Interactuar de una manera simple siempre y cuando la otra persona hable lenta y claramente y
+                            esté preparada para cooperar.</li>
+                    </ul>
+                    <a href="/Usuario/Nivel-A1">Empezar</a>
+                </div>
+                <div class="Tarjeta">
+                    <h1 class="Titulo">Nivel - A2</h1>
+                    <h3>Los estudiantes en este nivel pueden:</h3>
+                    <ul>
+                        <li>Entender oraciones y expresiones de uso frecuente relacionadas con las áreas de experiencia
+                            más inmediatamente relevantes para ellos (por ejemplo, información personal y familiar muy
+                            básica, pasatiempos, lugares de interés, empleo, etc.).</li>
+                        <li>Comunicarse en tareas simples, cotidianas que requieran no más de un intercambio simple y
+                            directo de información en asuntos familiares y rutinarios.</li>
+                        <li>Describir en términos simples eventos pasados, su medio ambiente y sus necesidades
+                            inmediatas.</li>
+                    </ul>
+                    <a href="/Usuario/Nivel-A2">Empezar</a>
+                </div>
+                <div class="Tarjeta">
+                    <h1 class="Titulo">Nivel - B1</h1>
+                    <h3>Los estudiantes en este nivel pueden:</h3>
+                    <ul>
+                        <li>Entender los puntos principales de textos claros sobre temas familiares, tales como el
+                            trabajo, el estudio y el esparcimiento.</li>
+                        <li>Hacer frente a la mayoría de las situaciones que puedan surgir en un viaje hacia lugares en
+                            los que se utiliza el inglés.</li>
+                        <li>Producir textos sencillos y coherentes acerca de temas con los que ellos están
+                            familiarizados o en los que tienen un interés personal.</li>
+                        <li>Describir experiencias, eventos, deseos y aspiraciones, así como brevemente justificar sus
+                            opiniones o explicar sus planes.</li>
+                    </ul>
+                    <a href="/Usuario/Nivel-B1">Empezar</a>
+                </div>
+                <div class="Tarjeta">
+                    <h1 class="Titulo">Nivel - B2</h1>
+                    <h3>Los estudiantes en este nivel pueden:</h3>
+                    <ul>
+                        <li>Entender las ideas principales de textos complejos en temas tanto concretos como abstractos,
+                            incluyendo discusiones técnicas en su área de especialización.</li>
+                        <li>Interactuar con un grado de fluidez y espontaneidad que posibilita la interacción con los
+                            hablantes nativos sin esfuerzo por ninguna de las partes.</li>
+                        <li>Producir textos claros y detallados sobre un amplio rango de temas y explicar un punto de
+                            vista sobre un tema de discusión presentando las ventajas y desventajas de varias opciones.
+                        </li>
+                    </ul>
+                    <a href="/Usuario/Nivel-B2">Empezar</a>
+                </div>
+            </div>
         </div>
 
         <!-- Footer -->

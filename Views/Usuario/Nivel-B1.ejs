@@ -2,26 +2,36 @@
 <%- include("../Includes/Header.ejs") %>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="/CSS/Style.css">
+	<link rel="stylesheet" href="/CSS/Ejercicios.css">
 
 	<!-- Nav Usuario -->
 	<%- include("../Includes/Nav-Usuario.ejs") %>
 
 		<!-- Division -->
-		<header>
-			<h1>Ejercicios de inglés - Nivel B1</h1>
-		</header>
-		<main>
-			<div id="question-container">
-				<h2 id="question"></h2>
-				<input type="text" id="answer">
-				<button id="check">Comprobar</button>
-				<p id="result"></p>
+		<div class="Contenedor-Ejercicios">
+			<header>
+				<h1>Ejercicios de inglés - Nivel B1</h1>
+			</header>
+			<main>
+				<div id="question-container">
+					<h2 id="question"></h2>
+					<br><br>
+					<input type="text" id="answer">
+					<button id="check">Comprobar</button>
+					<p id="result"></p>
+				</div>
+				<div id="progress-container">
+					<div id="progress-bar"></div>
+				</div>
+			</main>
+			<div class="Botones">
+				<a href="/Usuario">Volver</a>
+				<a href="/Usuario/Nivel-B2">Reiniciar</a>
 			</div>
-			<div id="progress-container">
-				<div id="progress-bar"></div>
-			</div>
-		</main>
+			<header>
+				<h2>Aprender ingles nunca habia sido tan facil</h2>
+			</header>
+		</div>
 
 		<!-- Scripts -->
 		<script src="/JavaScript/Scripts.js"></script>

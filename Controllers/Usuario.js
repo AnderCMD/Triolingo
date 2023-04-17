@@ -1,10 +1,3 @@
-exports.getInicio = (req, res, next) => {
-    res.render('Usuario/Inicio', {
-        TituloPagina: 'Triolingo - Bienvenido',
-        Ruta: '/Usuario'
-    });
-};
-
 exports.getNiveles = (req, res, next) => {
     res.render('Usuario/Niveles', {
         TituloPagina: 'Niveles de aprendizaje',
@@ -46,3 +39,4 @@ exports.getNivelB2 = (req, res, next) => {
         Ruta: '/Usuario/Nivel-B2'
     });
 };
+

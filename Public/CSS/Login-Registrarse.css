@@ -91,4 +91,10 @@
     .login-image {
         display: none;
     }
+
+    .login-form {
+        flex-basis: 100%;
+        padding: 2vh 10vh;
+        background-color: #fff;
+    }
 }

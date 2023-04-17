@@ -1,0 +1,66 @@
+.Contenedor-Niveles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.Contenedor-Niveles h1.Titulo {
+    margin: 2rem 0;
+    background-color: var(--Logo-Azul);
+    color: white;
+    padding: .65rem 1rem;
+    border-radius: 1rem;
+}
+
+.Niveles {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Tarjeta {
+    background-color: var(--Fondo-2);
+    margin: 1rem ;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content:  space-between;
+    width: 95%;
+}
+
+.Tarjeta h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.Tarjeta h3 {
+    text-align: center;
+}
+
+.Tarjeta li {
+    text-align: justify;
+    margin: 1rem 2rem 0;
+}
+
+.Tarjeta a {
+    background-color: var(--Botones);
+    color: white;
+    border-radius: 25px;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.Tarjeta a:hover {
+    background-color: var(--Botones-Hover);
+    transition: 0.8s;
+}
+
+@media (max-width: 992px) {
+    .Niveles {
+        flex-direction: column;
+    }
+}

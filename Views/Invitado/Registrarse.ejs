@@ -9,19 +9,25 @@
         <div class="container">
             <div class="login-form">
                 <h1>Registrarse</h1>
-                <form>
+                <form method="POST" action="">
                     <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre">
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre" required>
+
                     <label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tus apellidos">
-                    <label for="Birthday">Fecha de nacimiento:</label>
-                    <input type="date" id="Birthday" name="Birthday" placeholder="Ingresa tu fecha de nacimeinto">
-                    <label for="Email">Correo electronico:</label>
-                    <input type="email" id="Email" name="Email" placeholder="Ingresa tu correo electronico">
-                    <label for="Password">Contraseña:</label>
-                    <input type="password" id="Password" name="Password" placeholder="Ingresa tu contraseña">
-                    <label for="Nombre">Clave:</label>
-                    <input type="text" id="Key" name="Key" placeholder="Ingresa tu clave otorgada por la escuela">
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa tus apellidos" required>
+
+                    <label for="Fecha_Nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="Fecha_Nacimiento" name="Fecha_Nacimiento" placeholder="Ingresa tu fecha de nacimeinto" required>
+
+                    <label for="Correo_Electronico">Correo electronico:</label>
+                    <input type="email" id="Correo_Electronico" name="Correo_Electronico" placeholder="Ingresa tu correo electronico" required>
+
+                    <label for="Contrasena">Contraseña:</label>
+                    <input type="password" id="Contrasena" name="Contrasena" placeholder="Ingresa tu contraseña" required>
+
+                    <label for="Clave_Escuela">Clave:</label>
+                    <input type="text" id="Clave_Escuela" name="Clave_Escuela" placeholder="Ingresa tu clave otorgada por la escuela" required>
+
                     <br>
                     <button type="submit">Registrarse</button>
                     <p>Ya tienes una cuenta? <a href="/Login">Iniciar Sesion</a></p>
