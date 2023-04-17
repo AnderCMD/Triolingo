@@ -40,3 +40,10 @@ exports.getNivelB2 = (req, res, next) => {
     });
 };
 
+exports.getNivelAuditivo = (req, res, next) => {
+    res.render('Usuario/NivelAudio', {
+        TituloPagina: 'Nivel Auditivo',
+        Ruta: '/Usuario/nivelAudio'
+    });
+};
+

@@ -14,7 +14,7 @@ header {
 	color: white;
 }
 
-#question-container {
+.question-container {
 	margin-bottom: 2rem;
 	text-align: center;
 }

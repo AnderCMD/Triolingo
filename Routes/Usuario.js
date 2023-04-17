@@ -14,5 +14,6 @@ router.get('/Nivel-A2', ControladorUsuario.getNivelA2);
 router.get('/Nivel-B1', ControladorUsuario.getNivelB1);
 router.get('/Nivel-B2', ControladorUsuario.getNivelB2);
 router.get('/Inhabilitado', ControladorUsuario.getInhabilitado);
+router.get('/NivelAudio', ControladorUsuario.getNivelAuditivo);
 
 module.exports = router;

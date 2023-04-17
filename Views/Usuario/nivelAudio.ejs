@@ -1,0 +1,34 @@
+<!-- Header -->
+<%- include("../Includes/Header.ejs") %>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/Ejercicios.css">
+
+    <!-- Nav Usuario -->
+    <%- include("../Includes/Nav-Usuario.ejs") %>
+
+        <!-- Division -->
+        <div class="Contenedor-Ejercicios">
+            <header>
+                <h1>Ejercicios de inglés - Nivel Auditivo</h1>
+            </header>
+            <main>
+                <audio id="audio" src="audio2.mp3" controls></audio><br>
+                <button id="btnStart">COMENZAR GRABACION</button>
+                <button id="btnStop">DETENER</button><br>
+                <div class="texto"></div>
+            </main>
+            <div class="Botones">
+                <a href="/Usuario">Volver</a>
+                <a href="/Usuario/nivelAudio">Reiniciar</a>
+            </div>
+            <header>
+                <h2>Aprender ingles nunca habia sido tan facil</h2>
+            </header>
+        </div>
+
+        <!-- Scripts -->
+        <script src="/JavaScript/scriptAudios.js"></script>
+
+        <!-- Footer -->
+        <%- include("../Includes/Footer.ejs") %>
