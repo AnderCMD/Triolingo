@@ -1,4 +1,4 @@
--- Active: 1678983847178@@127.0.0.1@3306@triolingo
+-- Active: 1665463901831@@127.0.0.1@3306@triolingo
 
 CREATE DATABASE Triolingo 
     DEFAULT CHARACTER SET = 'utf8mb4';
