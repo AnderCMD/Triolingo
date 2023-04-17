@@ -14,3 +14,8 @@ Lenguajes de Programacion:
 - CSS
 - JavaScript
 - MySQL
+
+Comandos:
+
+- npm install //Instala los node_modules
+- npm start //Iniciar el servidor en localhost:3000
