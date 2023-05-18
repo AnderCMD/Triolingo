@@ -1,21 +1,25 @@
-# Trilingo
+# Fastware
 
-Proyecto de Arquitectura de Software - 5 Cuatrimestre
+_Proyecto de la materia de arquitectura de software del cuatrimestre 5_
 
-Desarrolladores:
+## Despliegue 📦
 
-- Emilio Arevalo Quiroz
-- Eder Javier Sosa Rivera
-- AnderCMD
+_Proximamente_
 
-Lenguajes de Programacion:
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
 
 - HTML
 - CSS
 - JavaScript
-- MySQL
+- NodeJS
 
-Comandos:
+## Autores ✒️
 
-- npm install //Instala los node_modules
-- npm start //Iniciar el servidor en localhost:3000
+- **Emilio Arevalo Quiroz | [Ver perfil](https://github.com/Akbino)**
+- **Eder Javier Sosa Rivera | [Ver perfil]()**
+- **AnderCMD | [Ver perfil](https://github.com/AnderCMD)**
+
+---
+⌨️ con ❤️ por [AnderCMD](https://github.com/AnderCMD) 😊
