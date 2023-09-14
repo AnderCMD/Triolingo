@@ -1,4 +1,4 @@
-# Fastware
+# Triolingo
 
 _Proyecto de la materia de arquitectura de software del cuatrimestre 5_
 
