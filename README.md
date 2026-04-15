@@ -14,7 +14,7 @@ Para ejecutar este proyecto en tu máquina, necesitas tener instalados los sigui
 
 * [Node.js](https://nodejs.org/) (LTS recomendado)
 * [MySQL](https://www.mysql.com/) - Base de datos utilizada para almacenar usuarios, lecciones y progreso
-* [pnpm](https://pnpm.io/) para gestionar las dependencias
+* [npm](https://www.npmjs.com/) para gestionar las dependencias
 
 ### Instalación 🔧
 
@@ -30,11 +30,16 @@ Para ejecutar este proyecto en tu máquina, necesitas tener instalados los sigui
 
 3. Instala las dependencias
     ```
-    pnpm install
+    npm install
     ```
 
-4. Crea un archivo `.env` en el directorio raíz con las siguientes variables de entorno:
+4. Crea un archivo `.env` en el directorio raíz basándote en el archivo `.env.example`:
     ```
+    cp .env.example .env
+    ```
+    Luego edita `.env` con tus valores:
+    ```
+    PORT=3000
     DB_HOST=localhost
     DB_USER=root
     DB_PASSWORD=tu_contraseña
@@ -43,7 +48,7 @@ Para ejecutar este proyecto en tu máquina, necesitas tener instalados los sigui
 
 5. Ejecuta el servidor de desarrollo
     ```
-    pnpm dev
+    npm run start
     ```
 
 6. Abre el navegador y accede a `http://localhost:3000` para comenzar a usar Triolingo.
@@ -60,20 +65,31 @@ Este proyecto no incluye pruebas automatizadas actualmente, pero puedes probar l
 
 Para desplegar este proyecto en un servidor de producción:
 
-1. Construye el proyecto para producción:
+1. Sube el proyecto a tu servidor de producción.
+2. Instala las dependencias en el servidor:
     ```
-    pnpm build
+    npm install
     ```
-
-2. Sube el frontend y el servidor Express a tu servidor de producción.
 3. Asegúrate de que la base de datos MySQL esté configurada correctamente en el servidor de producción.
-4. Configura las variables de entorno adecuadas para MySQL en el servidor.
+4. Configura las variables de entorno adecuadas en el archivo `.env` del servidor:
+    ```
+    PORT=tu_puerto
+    DB_HOST=tu_host
+    DB_USER=tu_usuario
+    DB_PASSWORD=tu_contraseña
+    DB_NAME=tu_base_de_datos
+    ```
+5. Inicia el servidor:
+    ```
+    npm run start
+    ```
 
 ## Construido con 🛠️
 
 * [Express](https://expressjs.com/) - Framework web para Node.js utilizado en el backend
 * [EJS](https://ejs.co/) - Motor de plantillas utilizado para renderizar las vistas
 * [MySQL](https://www.mysql.com/) - Base de datos relacional utilizada para almacenar información de usuarios, lecciones y progreso
+* [dotenv](https://github.com/motdotla/dotenv) - Carga de variables de entorno desde el archivo `.env`
 
 ## Contribuyendo 🖇️
 
