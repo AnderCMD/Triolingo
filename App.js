@@ -28,4 +28,6 @@ App.use(ControladorError.get404);
 
 // Iniciar la aplicación
 const PORT = process.env.PORT || 3000;
-App.listen(PORT);
+App.listen(PORT, () => {
+    console.log(`\nServidor iniciado en el puerto ${PORT}\n`);
+});
