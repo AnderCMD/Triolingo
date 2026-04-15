@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AnderCMD/Triolingo#readme",
   "dependencies": {
     "body-parser": "^1.20.4",
+    "dotenv": "^17.4.2",
     "ejs": "^3.1.10",
     "express": "^4.22.1",
     "mysql2": "^3.9.8",

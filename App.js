@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -26,4 +27,5 @@ App.use(RutasInvitado);
 App.use(ControladorError.get404);
 
 // Iniciar la aplicación
-App.listen(3000);
+const PORT = process.env.PORT || 3000;
+App.listen(PORT);
